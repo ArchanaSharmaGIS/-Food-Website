@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restro</title>
+    <!-- <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        html{
+            scroll-behavior: smooth;
+        }
+        
+          
+
+        
+           
+        nav ::before{
+            content:"" ;
+            opacity: 0.9;
+            background-color: rgb(15, 1, 1);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            
+            
+          
+          
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+           
+            position: relative;
+        }
+
+        .logo{
+            margin: 10px  34px;
+
+
+
+        }
+        .logo img{
+            height: 39px;
+            margin: 3px 6px;
+
+        }
+         nav ul{
+            display: flex;
+        }
+
+        nav ul li{
+            /* color: ; */
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        nav ul li a{
+           display: block;
+           padding: 3px 10px;
+           border-radius: 20px;
+           text-decoration: none;
+           color: white;
+           
+        }
+
+        nav ul li a:hover{
+        background-color: white;
+        color: black;
+        }
+
+        .back{
+            background: url("food_img/back.jpg") no-repeat center center/cover;
+            opacity: 0.9;
+            image-rendering: auto;
+
+
+        }
+/* home */
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 633px;
+         
+            
+        }
+        body {
+            content:"" ;
+          
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+            z-index: -1;
+        }
+
+        #home h1{
+         color: black;
+         text-align: center;
+        }
+          
+        #home p{
+            color: black;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .h_primary{
+            font: size 3.8rem;
+            padding: 12px;
+        }
+
+        .h_secondary{
+            font-size: 2.8rem;
+            padding: 12px;
+
+        }
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* services */
+#services{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+ h1{
+    text-align: center;
+    /* flex-direction: column-reverse; */
+    
+}
+
+
+
+.box ,.box1 ,.box2{
+    border: 2px solid brown;
+    padding: 20px;
+  
+    border-radius: 28px;
+    background-color: rgb(240, 225, 225);
+    width: 300px;
+    height: 300px;
+    margin-top:30px ;
+    margin-bottom: 30px;
+ 
+}
+
+.box img{
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+    
+
+}
+.box1 img{
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10%
+
+}
+.box2 img{
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10%
+    
+
+}
+
+
+
+.center{
+    text-align: center;
+}
+
+
+
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: url("food_img/food_photo.avif")  ;
+    background-size: cover;
+    
+    
+}
+.services-container p{
+    text-align: center;
+    padding: 4px;
+
+}
+.services-container .btn1{
+   justify-content: center;
+   align-self: center;
+ 
+   padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 7px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  
+   display: block;
+    margin: auto;
+}
+
+/* .client_section{
+   
+    position: relative;
+ background: url("food_photo.avif");
+    width: 100%;
+    height: 30%;
+  z-index: -1;
+  opacity: .4;
+
+    text-align: center;
+    justify-content: center
+} */
+
+/* .client_section h1{
+   
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+} */
+
+
+
+
+
+.about-item{
+/* 
+    height: 100%;
+    width: 100%; */
+    /* justify-content: center;
+    align-items: center; */
+    padding-left: 40px;
+    
+}
+
+.about-item p{
+  height: 100px;
+    flex-wrap: wrap;
+    color:whitesmoke;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin: auto;
+}
+.about-item img{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+#About_us{
+margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    background: url("food_img/final_about.jpg") no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.btna{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+#contact{
+    position: relative;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+#contact_box{
+    display: flex;
+ justify-content: space-between;
+ background-color: black;
+ padding-top: 40px;
+ background: url(food_img/about3.avif )no-repeat;
+ background-size: cover;
+}
+ 
+
+
+#contact_box img{
+    /* margin-right: 100px;
+  margin-bottom: 50px; */
+  height: 360px;
+  padding-left: 100px;
+  width: 300px;
+
+ 
+
+}
+
+
+#contact_box form{
+  
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  padding: 20px;
+  background-color: rgb(92, 52, 52);
+ 
+  
+
+}
+
+#contact_box input{
+    height: 30px;
+    width: 250px;
+}
+
+
+
+#contact_box label{
+    color: white;
+}
+
+
+
+#contact_box label{
+   font-size: 1rem;
+
+}
+#massage{
+    height: 100px;
+    width: 250px;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+
+    html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+   
+  
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    z-index: -1;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+  
+
+   
+nav ::before{
+    content:"" ;
+    opacity: 0.9;
+    background-color: rgb(15, 1, 1);
+
+   
+    z-index: -1;
+    top: 0px;
+    left: 0px;   
+  
+  
+}
+
+nav{
+    flex-direction: column;
+    /* align-items: center; */
+   background-size: cover;
+   justify-content: left;
+   flex-wrap: wrap;
+}
+ 
+
+.logo{
+    margin: 10px  20px;
+
+
+
+}
+.logo img{
+    height: 30px;
+    margin: 3px 5px;
+
+}
+ nav ul{
+    display: flex;
+    word-spacing:2px;
+    flex-wrap: wrap;
+   
+    
+
+    
+
+    
+}
+
+nav ul li{
+
+    list-style: none;
+   
+}
+nav ul li a{
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+  font-size: 15px;
+   color: white;
+
+}
+
+nav ul li a:hover{
+background-color: white;
+color: black;
+}
+
+.back{
+    background: url("food_img/back.jpg") no-repeat center center/cover;
+    opacity: 0.9;
+    image-rendering: auto;
+
+}
+
+
+
+#home h1{
+ color: black;
+ text-align: center;
+}
+  
+#home p{
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+}
+.h_primary{
+    font-size: 3.8rem;
+   
+     padding-top:4px ;
+     padding-bottom:5px ;
+}
+
+
+
+
+
+
+.btn{
+    font-size: 10px;
+   
+
+
+}
+
+
+.services-container{
+flex-direction: column;
+width: 100%;
+height: 100%;
+
+
+}
+
+.box ,.box1, .box2{
+    border: 2px solid brown;
+    
+  
+    border-radius: 28px;
+    background-color: rgb(240, 225, 225);
+    width: 200px;
+    height: 250px;
+    /* margin-top:30px ;
+    margin-bottom: 30px;
+  */
+}
+.box img ,.box1 img,.box2 img{
+    height: 60%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+
+}
+
+
+
+.btn1{
+
+  
+    padding: 3px 10px;
+    ;
+     margin: 4px;
+     font-size: 0.1rem;
+     border-radius: 10px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+
+
+
+
+
+.About_us{
+  
+        width: 100%;
+        height: 100%;
+       
+        background-size: cover;
+      
+    }
+    
+
+    .about-item p{
+      
+          flex-wrap: wrap;
+          color:whitesmoke;
+          text-align:left;
+          justify-content: center;
+          display: block;
+          margin: auto;
+          font-size: 0.8rem;
+          padding: 4px;
+      }
+      .about-item img{
+          border-radius: 50%;
+         
+          flex-wrap: wrap;
+           /* margin: 30px; */
+           justify-content: center;
+           display: block;
+           margin: auto;
+           padding-top: 10px;
+           padding-bottom: 10px;
+
+       
+          
+      }
+
+      .btna{
+        padding: 3px 15px;
+        
+        margin-top: 10px;
+        margin-bottom: 20px;
+      
+        
+        font: size 1rem;;
+        border-radius: 10px;
+        cursor: pointer;
+        display: block;
+     
+    }
+
+
+
+
+
+    #contact_box{
+    height: 100%;
+    width: 100%;
+     
+     background-size: cover;
+    }
+
+    
+    
+    #contact_box form{
+        justify-content: center;
+        display: block;
+        margin: auto;
+      
+  
+      background-color: rgb(92, 52, 52);
+     
+      
+    
+    }
+    
+    #contact_box input{
+        height: 15px;
+        width: 250px;
+    }
+     
+    
+    
+    #contact_box label{
+        color: white;
+    }
+    
+    
+    
+    #contact_box label{
+       font-size: 0.6rem;
+    
+    }
+     #massage{
+        height: 50px;
+        width: 250px;
+    
+    } 
+
+
+  
+    }
+  
+
+
+</style>
+</head>
+<body>
+    <div class="back">
+    <nav>
+        <div class="logo">
+            <img src="food_img/logo.jpg">
+        </div>
+        <ul>
+            <li class="item"><a href="#home1" > Home</a></li>
+            <li class="item"><a href="#services" >Services</a></li>
+            <li class="item"><a  href="#About_us">About us</a></li>
+            <li class="item"><a  href="#contact_box">contect us</a></li>
+     
+        </ul>
+    </nav>
+   <section id="home">
+    <h1 class="h-primary"> Delicious Food, Delivered Fast!</h1>
+    <p>Your favorite meals at your doorstep in minutes.</p>
+    <button class="btn">Order Now</button>
+  
+</section>
+</div>
+
+<div id="services">
+    <h1>Our Services </h1>
+    
+
+    
+    
+    <section class="services-container">
+       
+
+        <div class="box">
+            <img src="food_img/photo1.jpg">
+            <h2 class="h secondary center"> Fast Food</h2>
+            <p>
+                Burgers, Pizza, Fries
+            </p>
+            <button class="btn1">Explore Menu</button>
+        </div>
+
+
+        <div class="box1">
+            <img src="food_img/photo222.jpg">
+            <h2 class="h secondary center"> Healthy Options</h2>
+            <p>
+                Salads, Smoothies, Vegan Meals
+            </p>
+            <button class="btn1">Explore Menu</button>
+        </div>
+
+
+        <div class="box2">
+            <img src="food_img/photo3333.jpg">
+            <h2 class="h secondary center">Desserts: Cakes</h2>
+            <p>
+                Cakes, Ice Cream, Brownies
+            </p>
+            <button class="btn1">Explore Menu</button>
+        </div>
+
+        
+
+</section>
+</div>
+
+<h1 > About FoodieExpress</h1>
+<section id="About_us">
+   
+   
+
+    <div class="about-item"><br><br>
+        <img src="food_img/thali3.jpg" >
+        <p>We are passionate about bringing delicious food to your doorstep. Our chefs use the freshest ingredients <br>
+             to prepare meals that satisfy your cravings.With fast delivery and top-notch customer service <br>
+              we ensure a delightful food experience every time!</p>
+             <button class="btna">About More</button>
+             <img src="food_img/thali3.jpg" >
+            
+             <br>
+             <br>
+   </div>
+
+</section>
+<h1>Contact Us</h1>
+<section id="contact">
+    
+
+
+   
+
+    <div id="contact_box">
+        
+    <!-- <img src="food_img/first1.jpg" > -->
+        <form action="">
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter Name">
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="text" name="name" id="email" placeholder="Enter Email">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <label for="number">PhoneNumber</label><br>
+                <input type="text" name="name" id="number" placeholder="Enter Phone Number">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="massage">Massage</label><br>
+                <textarea name="massage" id="massage" cols="21" rows="10"></textarea>
+            </div>
+
+        </form>
+  
+    </div>
+</section>
+
+<footer>
+    <div class="center">
+        Copyright&copy;www.myonlinefood. all righta reserved
+    </div>
+   
+</footer>
+
+</body>
+</html>
