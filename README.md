@@ -3,7 +3,7 @@
 ## 🚀 Features 
 <img src="Screenshots/Screenshot 2025-03-20 114018.png" alt="Sample Screenshot" width="500">
 <img src="Screenshots/Screenshot 2025-03-20 114048.png" alt="Sample Screenshot" width="500">
-<img src="Screenshots/Screenshot 2025-03-20 114018.png" alt="Sample Screenshot" width="500">
+<img src="Screenshots/Screenshot 2025-03-20 114108.png" alt="Sample Screenshot" width="500">
 <img src="" alt="Sample Screenshot" width="500">
 
 ## 🖥️ Technologies Used  
